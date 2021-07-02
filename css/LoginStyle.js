@@ -30,7 +30,7 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     fontWeight: '700',
     color: 'white',
-    backgroundColor: '#ff69b4',
+    backgroundColor: '#d60c33',
     //backgroundColor: '#022E57',
   },
   signin: {

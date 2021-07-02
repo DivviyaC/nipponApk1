@@ -36,7 +36,7 @@ export default function Login({navigation}) {
       <Text style={styles.signin}>Sign in to Continue</Text>
       <View style={styles.textInputView}>
         <TextInput
-        style={{color:'black', width:'100%', backgroundColor:'white', padding:10}}
+        style={{color:'black', width:'100%', backgroundColor:'white', padding:10, fontSize:15, height:40}}
           onChangeText={value => {
             setPhoneNumber(parseInt(value));
             setNumberLength(value.length);
