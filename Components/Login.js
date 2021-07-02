@@ -42,6 +42,7 @@ export default function Login({navigation}) {
             setNumberLength(value.length);
           }}
           placeholder="Enter Mobile Number"
+          placeholderTextColor="grey"
           
           maxLength={10}
           keyboardType="numeric"
