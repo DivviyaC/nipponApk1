@@ -17,7 +17,7 @@ export default function RightBar()  {
               fontSize: 24,
               color:'white',
               marginTop:10,
-              paddingLeft:29}}>ORDERS LIST</Text>
+              paddingLeft:10}}>ORDERS</Text>
       </View>
     );
   };

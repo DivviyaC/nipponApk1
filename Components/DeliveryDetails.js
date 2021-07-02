@@ -21,6 +21,11 @@ const invoiceQty = (
     size={20}
   />
 );
+
+const orderNo = (
+  <MaterialCommunityIcons name="order-bool-ascending-variant" color="black" size={20} />
+);
+
 const delivered = (
   <MaterialCommunityIcons name="truck-check" color="white" size={50} />
 );
@@ -66,6 +71,11 @@ export default function DeliveryDetails({navigation, route}) {
               <View style={styles.cardView1}>
                 <Paragraph>{writingpad}</Paragraph>
                 <Paragraph style={styles.paragraph}>{item.orderNo}</Paragraph>
+              </View>
+              <Divider />
+              <View style={styles.cardView1}>
+                <Paragraph>{orderNo}</Paragraph>
+                <Paragraph style={styles.paragraph}>{item.invoiceno}</Paragraph>
               </View>
               <Divider />
               <View style={styles.cardView1}>
