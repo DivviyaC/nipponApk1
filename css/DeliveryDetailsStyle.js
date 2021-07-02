@@ -11,9 +11,7 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     fontWeight: '700',
     fontSize: 19,
-    padding: 25,
-    
-    
+    padding: 20,
     color: 'white',
     backgroundColor: '#0a428f',
     fontSize: 20,

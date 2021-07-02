@@ -9,8 +9,10 @@ export default StyleSheet.create({
 
   textInputView: {
     marginTop: '5%',
-    marginLeft: '5%',
-    marginRight: '5%',
+    marginLeft: '7%',
+    marginRight: '7%',
+    
+    
   },
 
   alertMessage: {
@@ -28,7 +30,7 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     fontWeight: '700',
     color: 'white',
-    backgroundColor: '#d60c33',
+    backgroundColor: '#ff69b4',
     //backgroundColor: '#022E57',
   },
   signin: {

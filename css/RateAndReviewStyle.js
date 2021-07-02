@@ -56,31 +56,42 @@ export default StyleSheet.create({
           backgroundColor: 'white', 
           flex: 1, maxHeight: '70%', padding: 0 },
       canvasStyle:{ backgroundColor: 'white', flex: 1, },
-      clearComponent:{  marginLeft: 40, marginTop:20},
+      clearComponent:{ marginRight:'15%', marginLeft:'5%' },
+      
       clearText:{
         fontSize: 19,
-        padding:20,
+        paddingTop:10,
+        paddingBottom:10,
+        paddingLeft:19,
+        paddingRight:19,
         fontFamily:'Montserrat-Regular',
         fontFamily:'500',
-        
+        textAlign:'center',
         backgroundColor: "#d60c33",
         borderRadius:15,
         marginLeft:10,
-        marginBottom:10,
+        marginRight:8,
+        marginBottom:20,
         alignContent:'flex-end',
         color:'white'
       }, 
-      saveSignature:{ marginTop:20,marginLeft: 50, },
+
+      saveSignature:{ marginRight:'15%', marginLeft:'5%'},
 
       saveText:{
         fontSize: 19,
-        padding:20,
+        paddingTop:10,
+        paddingBottom:10,
+        paddingLeft:19,
+        paddingRight:19,
         fontFamily:'Montserrat-Regular',
         fontFamily:'500',
         borderRadius:15,
         backgroundColor: "#4BB543",
-        marginRight:20,
-        marginBottom:10,
+        textAlign:'center',
+        marginBottom:20,
+        marginRight:10,
+        marginLeft:25,
         color:'white'
       },
 

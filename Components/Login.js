@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {Text, View, StatusBar, Image} from 'react-native';
-import {TextInput} from 'react-native-paper';
+import {Text, View, StatusBar, Image, TextInput} from 'react-native';
+
 import styles from '../css/LoginStyle';
 
 export default function Login({navigation}) {
@@ -36,12 +36,13 @@ export default function Login({navigation}) {
       <Text style={styles.signin}>Sign in to Continue</Text>
       <View style={styles.textInputView}>
         <TextInput
+        style={{color:'black', width:'100%', backgroundColor:'white', padding:10}}
           onChangeText={value => {
             setPhoneNumber(parseInt(value));
             setNumberLength(value.length);
           }}
           placeholder="Enter Mobile Number"
-          placeholderTextColor="#21094e"
+          
           maxLength={10}
           keyboardType="numeric"
         />
