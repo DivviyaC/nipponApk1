@@ -5,7 +5,7 @@ import {Card} from 'react-native-paper';
 import Foundation from 'react-native-vector-icons/Foundation';
 import styles from '../css/RateAndReviewStyle';
 import RNFS from 'react-native-fs';
-import RNSketchCanvas from '@terrylinla/react-native-sketch-canvas';
+import CustomRNSketchCanvas from '../Signature/CustomRNSketchCanvas';
 import Modal from 'react-native-modal';
 import AwesomeAlert from 'react-native-awesome-alerts';
 import axios from 'axios';
@@ -119,7 +119,7 @@ export default function RateAndReview({navigation, route}) {
             X
           </Text>
           <Text style={styles.signatureComment}>Please Sign below ...</Text>
-          <RNSketchCanvas
+          <CustomRNSketchCanvas
             containerStyle={styles.canvasContainerStyle}
             canvasStyle={styles.canvasStyle}
             onStrokeEnd={data => {}}

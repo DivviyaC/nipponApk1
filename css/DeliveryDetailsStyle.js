@@ -5,27 +5,28 @@ export default StyleSheet.create({
     height:'100%'
   },
   heading: {
-    marginTop:20,
-    marginRight:20,
-    marginLeft:20,
+    
+    width:'100%',
     fontFamily: 'Montserrat-Bold',
     fontWeight: '700',
     fontSize: 19,
-    padding: 20,
+    paddingTop:15,
+    paddingBottom:15,
+    paddingRight:15,
+    paddingLeft:15,
+    top:-2,
     color: 'white',
     backgroundColor: '#0a428f',
-    fontSize: 20,
+    borderRadius:4
+    
   },
   cardstyle: {
     backgroundColor: 'white',
-    marginLeft: 20,
-    marginRight:20,
-    marginBottom:20,
+    margin:20,
     paddingBottom:15,
     borderColor:'#0a428f',
-    borderLeftWidth:1,
-    borderBottomWidth:1,
-    borderRightWidth:1
+    borderWidth:1,
+    borderRadius:5
     
   },
   cardView: {

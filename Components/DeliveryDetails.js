@@ -3,7 +3,7 @@ import {Text, View, ScrollView} from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {Card} from 'react-native-paper';
+import {Card, Title} from 'react-native-paper';
 import {Paragraph, Divider} from 'react-native-paper';
 import styles from '../css/DeliveryDetailsStyle';
 
@@ -44,10 +44,16 @@ export default function DeliveryDetails({navigation, route}) {
       {DeliveryDetails == null
         ? ''
         : DeliveryDetails.map(item => (
-          <View>
-          <Paragraph style={styles.heading}>{item.customerName}</Paragraph>
-            <View style={styles.cardstyle}>
-              
+          
+         
+            <Card style={styles.cardstyle}>
+             
+            <Title
+            style={styles.heading}
+           
+            >
+               {item.customerName} 
+            </Title>
               <View style={styles.cardView}>
                 <Paragraph>{phone}</Paragraph>
                 <Paragraph style={styles.paragraph}>{item.contactno}</Paragraph>
@@ -140,8 +146,9 @@ export default function DeliveryDetails({navigation, route}) {
                   {delivered}
                 </Text>
               </View>
-            </View>
-            </View>
+             
+            </Card>
+           
           ))}
     </ScrollView>
   );

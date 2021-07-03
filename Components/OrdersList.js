@@ -14,7 +14,6 @@ import styles from '../css/OrdersListStyle';
 import LeftBar from './LeftBar';
 import RightBar from './RightBar';
 import Spinner from 'react-native-loading-spinner-overlay';
-import NetworkLogger from 'react-native-network-logger';
 
 const tick = <Entypo name="check" size={25} color="white" />;
 
@@ -54,6 +53,7 @@ export default function OrdersList({navigation, route}) {
         deviceNumber: driverNumber,
       })
       .then(res => setOrdersListData(res.data));
+      console.log(res)
         setRefreshing(false) 
     }
   }, [refreshing]);
