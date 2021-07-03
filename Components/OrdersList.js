@@ -53,7 +53,7 @@ export default function OrdersList({navigation, route}) {
         deviceNumber: driverNumber,
       })
       .then(res => setOrdersListData(res.data));
-      console.log(res)
+     
         setRefreshing(false) 
     }
   }, [refreshing]);

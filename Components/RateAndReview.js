@@ -77,6 +77,14 @@ export default function RateAndReview({navigation, route}) {
     setModalVisible(true);
   };
 
+  const alertOnpress = () => {
+    postmethod();
+    // handleFileDelete()
+    setRefreshing(true);
+    setModalVisible(false);
+    navigation.navigate('OrdersList');
+  }
+
   return (
     <View style={styles.view}>
       <AwesomeAlert
@@ -91,12 +99,7 @@ export default function RateAndReview({navigation, route}) {
         confirmText="Yes"
         confirmButtonColor="#d60c33"
         onConfirmPressed={() => {
-          postmethod();
-          // handleFileDelete()
-          setRefreshing(true);
-          setModalVisible(false);
-          navigation.navigate('OrdersList');
-
+          alertOnpress()
           //this.setState({showAlert:false})
         }}
       />
